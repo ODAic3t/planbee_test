@@ -1,0 +1,28 @@
+{
+  "name": "PlanBee - 歯科診療計画共有アプリ",
+  "short_name": "PlanBee",
+  "description": "歯科医院における診療計画共有と患者コミュニケーションを支援するアプリ",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#3B82F6",
+  "orientation": "portrait",
+  "icons": [
+    {
+      "src": "/icon-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "maskable any"
+    },
+    {
+      "src": "/icon-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable any"
+    }
+  ],
+  "categories": ["medical", "health", "productivity"],
+  "lang": "ja",
+  "scope": "/",
+  "id": "planbee-dental-app"
+} 
