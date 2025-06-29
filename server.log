@@ -445,3 +445,16 @@ AI message save error: {
  GET /staff/patients 200 in 32ms
  GET /staff/dashboard 200 in 42ms
  GET / 200 in 39ms
+ GET /staff/login 200 in 46ms
+ GET /patient/login 200 in 66ms
+ GET /patient/dashboard 200 in 39ms
+ ✓ Compiled in 57ms
+ GET /patient/chat 200 in 126ms
+ GET /patient/dashboard 200 in 105ms
+ ✓ Compiled in 28ms
+ ✓ Compiled in 41ms
+ ✓ Compiled in 37ms
+ ✓ Compiled in 47ms
+ ✓ Compiled in 34ms
+ ✓ Compiled in 30ms
+ ✓ Compiled in 43ms

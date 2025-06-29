@@ -3,7 +3,7 @@ import { Patient, Staff, Clinic, TreatmentPlan, TreatmentItem } from '@/types';
 
 export const mockClinic: Clinic = {
   id: 'hachi-dental-onojo',
-  name: 'はち歯科',
+  name: '大野城はち歯科',
   location: '福岡県大野城市',
   created_at: new Date().toISOString(),
   updated_at: new Date().toISOString()

@@ -122,7 +122,7 @@ CREATE POLICY "staff_chat_access" ON chat_messages
 
 -- 初期データ投入
 INSERT INTO clinics (id, name, location) VALUES 
-('12345678-1234-1234-1234-123456789012', 'はち歯科', '福岡県大野城市');
+('12345678-1234-1234-1234-123456789012', '大野城はち歯科', '福岡県大野城市');
 
 -- 更新トリガー関数
 CREATE OR REPLACE FUNCTION update_updated_at_column()

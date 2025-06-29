@@ -6,7 +6,7 @@ const testAccounts = {
   // テスト用クリニック
   clinic: {
     id: 'hachi-dental-onojo',
-    name: 'はち歯科',
+    name: '大野城はち歯科',
     location: '福岡県大野城市'
   },
 

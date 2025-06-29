@@ -31,7 +31,7 @@ export default function PatientDashboardPage() {
       backLabel="トップページに戻る"
     >
       <div className="space-y-6">
-        <div className="bg-gradient-to-r from-blue-600 to-blue-700 text-white rounded-lg p-6 shadow-sm">
+                <div className="bg-gradient-to-r from-blue-600 to-blue-700 text-white rounded-lg p-6 shadow-sm">
           <div className="flex items-center mb-4">
             <div className="w-12 h-12 bg-white bg-opacity-20 rounded-full flex items-center justify-center mr-4">
               <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -43,19 +43,19 @@ export default function PatientDashboardPage() {
                 こんにちは、{patient.name}さん
               </h2>
               <p className="text-blue-100 text-sm">
-                PlanBee - はち歯科 大野城店
+                PlanBee - 大野城はち歯科
               </p>
             </div>
           </div>
-          <div className="bg-white bg-opacity-10 rounded-lg p-3">
-            <div className="grid grid-cols-2 gap-4 text-sm">
-              <div>
-                <span className="text-blue-100">患者番号:</span>
-                <span className="ml-2 font-semibold">{patient.patient_number}</span>
+          <div className="bg-white rounded-lg p-4 text-gray-800">
+            <div className="grid grid-cols-1 gap-3">
+              <div className="flex items-center justify-between">
+                <span className="text-gray-600 font-medium">患者番号:</span>
+                <span className="text-gray-900 font-bold text-lg">{patient.patient_number}</span>
               </div>
-              <div>
-                <span className="text-blue-100">生年月日:</span>
-                <span className="ml-2 font-semibold">{formatDate(patient.birth_date)}</span>
+              <div className="flex items-center justify-between">
+                <span className="text-gray-600 font-medium">生年月日:</span>
+                <span className="text-gray-900 font-bold">{formatDate(patient.birth_date)}</span>
               </div>
             </div>
           </div>

@@ -25,7 +25,7 @@ export default function HomePage() {
                 歯科診療計画共有アプリ
               </p>
               <p className="text-sm text-gray-500">
-                はち歯科 大野城店
+                大野城はち歯科
               </p>
             </div>
           </div>

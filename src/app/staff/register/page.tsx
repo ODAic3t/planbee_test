@@ -54,7 +54,7 @@ export default function StaffRegisterPage() {
     setError(null);
 
     try {
-      // 固定のクリニックID（はち歯科大野城店）
+      // 固定のクリニックID（大野城はち歯科）
       const clinicId = 'hachi-dental-onojo';
       
       const result = await registerStaff(data.name, data.email, data.password, clinicId);
@@ -211,7 +211,7 @@ export default function StaffRegisterPage() {
                   <strong>登録について：</strong><br />
                   • 登録後、管理者による承認が必要です<br />
                   • 承認完了後にログインが可能になります<br />
-                  • はち歯科大野城店のスタッフ専用です
+                  • 大野城はち歯科のスタッフ専用です
                 </p>
               </div>
             </CardContent>

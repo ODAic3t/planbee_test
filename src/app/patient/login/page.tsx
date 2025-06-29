@@ -86,9 +86,9 @@ export default function PatientLoginPage() {
             <p className="text-sm text-gray-600">
               PlanBee - 歯科診療計画共有アプリ
             </p>
-            <p className="text-xs text-gray-500 mt-1">
-              はち歯科 大野城店
-            </p>
+                         <p className="text-xs text-gray-500 mt-1">
+               大野城はち歯科
+             </p>
           </div>
 
           <Card className="shadow-lg">
