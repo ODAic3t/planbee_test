@@ -458,3 +458,469 @@ AI message save error: {
  ✓ Compiled in 34ms
  ✓ Compiled in 30ms
  ✓ Compiled in 43ms
+ GET / 200 in 135ms
+ GET /staff/login 200 in 114ms
+ GET /staff/dashboard 200 in 121ms
+ GET /staff/admin 200 in 133ms
+ GET /staff/dashboard 200 in 40ms
+ GET /staff/treatment-plans 200 in 139ms
+ GET /staff/dashboard 200 in 45ms
+ GET / 200 in 46ms
+ GET /patient/login 200 in 120ms
+ GET /patient/dashboard 200 in 119ms
+ GET /patient/treatment-plan 200 in 117ms
+ GET /patient/chat 200 in 128ms
+ GET /patient/dashboard 200 in 35ms
+ GET / 200 in 33ms
+ GET / 200 in 155ms
+ GET /favicon.ico 200 in 321ms
+ GET /patient/login 200 in 46ms
+ GET /patient/dashboard 200 in 37ms
+ GET /patient/treatment-plan 200 in 33ms
+ GET /patient/dashboard 200 in 31ms
+ GET /patient/chat 200 in 66ms
+Chat history fetch error: {
+  message: 'TypeError: fetch failed',
+  details: 'TypeError: fetch failed\n' +
+    '    at node:internal/deps/undici/undici:15482:13\n' +
+    '    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)\n' +
+    '    at async POST (/Users/tazusa/Desktop/HyaQShix/PlanBee/planbee/.next/server/chunks/[root-of-the-server]__9b49ce5c._.js:281:60)\n' +
+    '    at async AppRouteRouteModule.do (/Users/tazusa/Desktop/HyaQShix/PlanBee/planbee/node_modules/next/dist/compiled/next-server/app-route-turbo.runtime.dev.js:26:34112)\n' +
+    '    at async AppRouteRouteModule.handle (/Users/tazusa/Desktop/HyaQShix/PlanBee/planbee/node_modules/next/dist/compiled/next-server/app-route-turbo.runtime.dev.js:26:41338)\n' +
+    '    at async doRender (/Users/tazusa/Desktop/HyaQShix/PlanBee/planbee/node_modules/next/dist/server/base-server.js:1518:42)\n' +
+    '    at async DevServer.renderToResponseWithComponentsImpl (/Users/tazusa/Desktop/HyaQShix/PlanBee/planbee/node_modules/next/dist/server/base-server.js:1920:28)\n' +
+    '    at async DevServer.renderPageComponent (/Users/tazusa/Desktop/HyaQShix/PlanBee/planbee/node_modules/next/dist/server/base-server.js:2408:24)\n' +
+    '    at async DevServer.renderToResponseImpl (/Users/tazusa/Desktop/HyaQShix/PlanBee/planbee/node_modules/next/dist/server/base-server.js:2445:32)\n' +
+    '    at async DevServer.pipeImpl (/Users/tazusa/Desktop/HyaQShix/PlanBee/planbee/node_modules/next/dist/server/base-server.js:1008:25)\n' +
+    '    at async NextNodeServer.handleCatchallRenderRequest (/Users/tazusa/Desktop/HyaQShix/PlanBee/planbee/node_modules/next/dist/server/next-server.js:305:17)\n' +
+    '    at async DevServer.handleRequestImpl (/Users/tazusa/Desktop/HyaQShix/PlanBee/planbee/node_modules/next/dist/server/base-server.js:900:17)\n' +
+    '    at async /Users/tazusa/Desktop/HyaQShix/PlanBee/planbee/node_modules/next/dist/server/dev/next-dev-server.js:371:20\n' +
+    '    at async Span.traceAsyncFn (/Users/tazusa/Desktop/HyaQShix/PlanBee/planbee/node_modules/next/dist/trace/trace.js:157:20)\n' +
+    '    at async DevServer.handleRequest (/Users/tazusa/Desktop/HyaQShix/PlanBee/planbee/node_modules/next/dist/server/dev/next-dev-server.js:368:24)\n' +
+    '    at async invokeRender (/Users/tazusa/Desktop/HyaQShix/PlanBee/planbee/node_modules/next/dist/server/lib/router-server.js:237:21)\n' +
+    '    at async handleRequest (/Users/tazusa/Desktop/HyaQShix/PlanBee/planbee/node_modules/next/dist/server/lib/router-server.js:428:24)\n' +
+    '    at async requestHandlerImpl (/Users/tazusa/Desktop/HyaQShix/PlanBee/planbee/node_modules/next/dist/server/lib/router-server.js:452:13)\n' +
+    '    at async Server.requestListener (/Users/tazusa/Desktop/HyaQShix/PlanBee/planbee/node_modules/next/dist/server/lib/start-server.js:158:13)',
+  hint: '',
+  code: ''
+}
+User message save error: {
+  message: 'TypeError: fetch failed',
+  details: 'TypeError: fetch failed\n' +
+    '    at node:internal/deps/undici/undici:15482:13\n' +
+    '    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)\n' +
+    '    at async POST (/Users/tazusa/Desktop/HyaQShix/PlanBee/planbee/.next/server/chunks/[root-of-the-server]__9b49ce5c._.js:298:45)\n' +
+    '    at async AppRouteRouteModule.do (/Users/tazusa/Desktop/HyaQShix/PlanBee/planbee/node_modules/next/dist/compiled/next-server/app-route-turbo.runtime.dev.js:26:34112)\n' +
+    '    at async AppRouteRouteModule.handle (/Users/tazusa/Desktop/HyaQShix/PlanBee/planbee/node_modules/next/dist/compiled/next-server/app-route-turbo.runtime.dev.js:26:41338)\n' +
+    '    at async doRender (/Users/tazusa/Desktop/HyaQShix/PlanBee/planbee/node_modules/next/dist/server/base-server.js:1518:42)\n' +
+    '    at async DevServer.renderToResponseWithComponentsImpl (/Users/tazusa/Desktop/HyaQShix/PlanBee/planbee/node_modules/next/dist/server/base-server.js:1920:28)\n' +
+    '    at async DevServer.renderPageComponent (/Users/tazusa/Desktop/HyaQShix/PlanBee/planbee/node_modules/next/dist/server/base-server.js:2408:24)\n' +
+    '    at async DevServer.renderToResponseImpl (/Users/tazusa/Desktop/HyaQShix/PlanBee/planbee/node_modules/next/dist/server/base-server.js:2445:32)\n' +
+    '    at async DevServer.pipeImpl (/Users/tazusa/Desktop/HyaQShix/PlanBee/planbee/node_modules/next/dist/server/base-server.js:1008:25)\n' +
+    '    at async NextNodeServer.handleCatchallRenderRequest (/Users/tazusa/Desktop/HyaQShix/PlanBee/planbee/node_modules/next/dist/server/next-server.js:305:17)\n' +
+    '    at async DevServer.handleRequestImpl (/Users/tazusa/Desktop/HyaQShix/PlanBee/planbee/node_modules/next/dist/server/base-server.js:900:17)\n' +
+    '    at async /Users/tazusa/Desktop/HyaQShix/PlanBee/planbee/node_modules/next/dist/server/dev/next-dev-server.js:371:20\n' +
+    '    at async Span.traceAsyncFn (/Users/tazusa/Desktop/HyaQShix/PlanBee/planbee/node_modules/next/dist/trace/trace.js:157:20)\n' +
+    '    at async DevServer.handleRequest (/Users/tazusa/Desktop/HyaQShix/PlanBee/planbee/node_modules/next/dist/server/dev/next-dev-server.js:368:24)\n' +
+    '    at async invokeRender (/Users/tazusa/Desktop/HyaQShix/PlanBee/planbee/node_modules/next/dist/server/lib/router-server.js:237:21)\n' +
+    '    at async handleRequest (/Users/tazusa/Desktop/HyaQShix/PlanBee/planbee/node_modules/next/dist/server/lib/router-server.js:428:24)\n' +
+    '    at async requestHandlerImpl (/Users/tazusa/Desktop/HyaQShix/PlanBee/planbee/node_modules/next/dist/server/lib/router-server.js:452:13)\n' +
+    '    at async Server.requestListener (/Users/tazusa/Desktop/HyaQShix/PlanBee/planbee/node_modules/next/dist/server/lib/start-server.js:158:13)',
+  hint: '',
+  code: ''
+}
+AI message save error: {
+  message: 'TypeError: fetch failed',
+  details: 'TypeError: fetch failed\n' +
+    '    at node:internal/deps/undici/undici:15482:13\n' +
+    '    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)\n' +
+    '    at async POST (/Users/tazusa/Desktop/HyaQShix/PlanBee/planbee/.next/server/chunks/[root-of-the-server]__9b49ce5c._.js:308:43)\n' +
+    '    at async AppRouteRouteModule.do (/Users/tazusa/Desktop/HyaQShix/PlanBee/planbee/node_modules/next/dist/compiled/next-server/app-route-turbo.runtime.dev.js:26:34112)\n' +
+    '    at async AppRouteRouteModule.handle (/Users/tazusa/Desktop/HyaQShix/PlanBee/planbee/node_modules/next/dist/compiled/next-server/app-route-turbo.runtime.dev.js:26:41338)\n' +
+    '    at async doRender (/Users/tazusa/Desktop/HyaQShix/PlanBee/planbee/node_modules/next/dist/server/base-server.js:1518:42)\n' +
+    '    at async DevServer.renderToResponseWithComponentsImpl (/Users/tazusa/Desktop/HyaQShix/PlanBee/planbee/node_modules/next/dist/server/base-server.js:1920:28)\n' +
+    '    at async DevServer.renderPageComponent (/Users/tazusa/Desktop/HyaQShix/PlanBee/planbee/node_modules/next/dist/server/base-server.js:2408:24)\n' +
+    '    at async DevServer.renderToResponseImpl (/Users/tazusa/Desktop/HyaQShix/PlanBee/planbee/node_modules/next/dist/server/base-server.js:2445:32)\n' +
+    '    at async DevServer.pipeImpl (/Users/tazusa/Desktop/HyaQShix/PlanBee/planbee/node_modules/next/dist/server/base-server.js:1008:25)\n' +
+    '    at async NextNodeServer.handleCatchallRenderRequest (/Users/tazusa/Desktop/HyaQShix/PlanBee/planbee/node_modules/next/dist/server/next-server.js:305:17)\n' +
+    '    at async DevServer.handleRequestImpl (/Users/tazusa/Desktop/HyaQShix/PlanBee/planbee/node_modules/next/dist/server/base-server.js:900:17)\n' +
+    '    at async /Users/tazusa/Desktop/HyaQShix/PlanBee/planbee/node_modules/next/dist/server/dev/next-dev-server.js:371:20\n' +
+    '    at async Span.traceAsyncFn (/Users/tazusa/Desktop/HyaQShix/PlanBee/planbee/node_modules/next/dist/trace/trace.js:157:20)\n' +
+    '    at async DevServer.handleRequest (/Users/tazusa/Desktop/HyaQShix/PlanBee/planbee/node_modules/next/dist/server/dev/next-dev-server.js:368:24)\n' +
+    '    at async invokeRender (/Users/tazusa/Desktop/HyaQShix/PlanBee/planbee/node_modules/next/dist/server/lib/router-server.js:237:21)\n' +
+    '    at async handleRequest (/Users/tazusa/Desktop/HyaQShix/PlanBee/planbee/node_modules/next/dist/server/lib/router-server.js:428:24)\n' +
+    '    at async requestHandlerImpl (/Users/tazusa/Desktop/HyaQShix/PlanBee/planbee/node_modules/next/dist/server/lib/router-server.js:452:13)\n' +
+    '    at async Server.requestListener (/Users/tazusa/Desktop/HyaQShix/PlanBee/planbee/node_modules/next/dist/server/lib/start-server.js:158:13)',
+  hint: '',
+  code: ''
+}
+ POST /api/chat 200 in 80ms
+ GET /patient/dashboard 200 in 30ms
+ GET /patient/chat/history 404 in 44ms
+ GET /patient/chat/history 404 in 53ms
+ GET /patient/dashboard 200 in 181ms
+ GET /patient/login 200 in 101ms
+ GET /patient/dashboard 200 in 38ms
+ GET /patient/login 200 in 39ms
+ GET / 200 in 56ms
+ GET /staff/login 200 in 40ms
+ GET /staff/dashboard 200 in 36ms
+ GET /staff/patients 200 in 145ms
+ GET /staff/dashboard 200 in 35ms
+ GET /staff/treatment-plans 200 in 49ms
+ GET /staff/dashboard 200 in 43ms
+ GET /staff/chat-summaries 200 in 139ms
+ GET /staff/dashboard 200 in 37ms
+ GET /staff/admin 200 in 37ms
+ GET /staff/dashboard 200 in 36ms
+ GET /staff/login 200 in 40ms
+ GET / 200 in 55ms
+ GET /staff/login 200 in 36ms
+ GET /staff/register 200 in 144ms
+ GET / 200 in 45ms
+ GET /patient/login 200 in 56ms
+ GET /patient/login 200 in 113ms
+ GET /favicon.ico 200 in 328ms
+ GET /patient/dashboard 200 in 36ms
+ GET /patient/treatment-plan 200 in 46ms
+ GET /patient/dashboard 200 in 42ms
+ GET /patient/treatment-plan 200 in 35ms
+ GET /patient/dashboard 200 in 37ms
+ GET /patient/chat 200 in 35ms
+Chat history fetch error: {
+  message: 'TypeError: fetch failed',
+  details: 'TypeError: fetch failed\n' +
+    '    at node:internal/deps/undici/undici:15482:13\n' +
+    '    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)\n' +
+    '    at async POST (/Users/tazusa/Desktop/HyaQShix/PlanBee/planbee/.next/server/chunks/[root-of-the-server]__9b49ce5c._.js:281:60)\n' +
+    '    at async AppRouteRouteModule.do (/Users/tazusa/Desktop/HyaQShix/PlanBee/planbee/node_modules/next/dist/compiled/next-server/app-route-turbo.runtime.dev.js:26:34112)\n' +
+    '    at async AppRouteRouteModule.handle (/Users/tazusa/Desktop/HyaQShix/PlanBee/planbee/node_modules/next/dist/compiled/next-server/app-route-turbo.runtime.dev.js:26:41338)\n' +
+    '    at async doRender (/Users/tazusa/Desktop/HyaQShix/PlanBee/planbee/node_modules/next/dist/server/base-server.js:1518:42)\n' +
+    '    at async DevServer.renderToResponseWithComponentsImpl (/Users/tazusa/Desktop/HyaQShix/PlanBee/planbee/node_modules/next/dist/server/base-server.js:1920:28)\n' +
+    '    at async DevServer.renderPageComponent (/Users/tazusa/Desktop/HyaQShix/PlanBee/planbee/node_modules/next/dist/server/base-server.js:2408:24)\n' +
+    '    at async DevServer.renderToResponseImpl (/Users/tazusa/Desktop/HyaQShix/PlanBee/planbee/node_modules/next/dist/server/base-server.js:2445:32)\n' +
+    '    at async DevServer.pipeImpl (/Users/tazusa/Desktop/HyaQShix/PlanBee/planbee/node_modules/next/dist/server/base-server.js:1008:25)\n' +
+    '    at async NextNodeServer.handleCatchallRenderRequest (/Users/tazusa/Desktop/HyaQShix/PlanBee/planbee/node_modules/next/dist/server/next-server.js:305:17)\n' +
+    '    at async DevServer.handleRequestImpl (/Users/tazusa/Desktop/HyaQShix/PlanBee/planbee/node_modules/next/dist/server/base-server.js:900:17)\n' +
+    '    at async /Users/tazusa/Desktop/HyaQShix/PlanBee/planbee/node_modules/next/dist/server/dev/next-dev-server.js:371:20\n' +
+    '    at async Span.traceAsyncFn (/Users/tazusa/Desktop/HyaQShix/PlanBee/planbee/node_modules/next/dist/trace/trace.js:157:20)\n' +
+    '    at async DevServer.handleRequest (/Users/tazusa/Desktop/HyaQShix/PlanBee/planbee/node_modules/next/dist/server/dev/next-dev-server.js:368:24)\n' +
+    '    at async invokeRender (/Users/tazusa/Desktop/HyaQShix/PlanBee/planbee/node_modules/next/dist/server/lib/router-server.js:237:21)\n' +
+    '    at async handleRequest (/Users/tazusa/Desktop/HyaQShix/PlanBee/planbee/node_modules/next/dist/server/lib/router-server.js:428:24)\n' +
+    '    at async requestHandlerImpl (/Users/tazusa/Desktop/HyaQShix/PlanBee/planbee/node_modules/next/dist/server/lib/router-server.js:452:13)\n' +
+    '    at async Server.requestListener (/Users/tazusa/Desktop/HyaQShix/PlanBee/planbee/node_modules/next/dist/server/lib/start-server.js:158:13)',
+  hint: '',
+  code: ''
+}
+User message save error: {
+  message: 'TypeError: fetch failed',
+  details: 'TypeError: fetch failed\n' +
+    '    at node:internal/deps/undici/undici:15482:13\n' +
+    '    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)\n' +
+    '    at async POST (/Users/tazusa/Desktop/HyaQShix/PlanBee/planbee/.next/server/chunks/[root-of-the-server]__9b49ce5c._.js:298:45)\n' +
+    '    at async AppRouteRouteModule.do (/Users/tazusa/Desktop/HyaQShix/PlanBee/planbee/node_modules/next/dist/compiled/next-server/app-route-turbo.runtime.dev.js:26:34112)\n' +
+    '    at async AppRouteRouteModule.handle (/Users/tazusa/Desktop/HyaQShix/PlanBee/planbee/node_modules/next/dist/compiled/next-server/app-route-turbo.runtime.dev.js:26:41338)\n' +
+    '    at async doRender (/Users/tazusa/Desktop/HyaQShix/PlanBee/planbee/node_modules/next/dist/server/base-server.js:1518:42)\n' +
+    '    at async DevServer.renderToResponseWithComponentsImpl (/Users/tazusa/Desktop/HyaQShix/PlanBee/planbee/node_modules/next/dist/server/base-server.js:1920:28)\n' +
+    '    at async DevServer.renderPageComponent (/Users/tazusa/Desktop/HyaQShix/PlanBee/planbee/node_modules/next/dist/server/base-server.js:2408:24)\n' +
+    '    at async DevServer.renderToResponseImpl (/Users/tazusa/Desktop/HyaQShix/PlanBee/planbee/node_modules/next/dist/server/base-server.js:2445:32)\n' +
+    '    at async DevServer.pipeImpl (/Users/tazusa/Desktop/HyaQShix/PlanBee/planbee/node_modules/next/dist/server/base-server.js:1008:25)\n' +
+    '    at async NextNodeServer.handleCatchallRenderRequest (/Users/tazusa/Desktop/HyaQShix/PlanBee/planbee/node_modules/next/dist/server/next-server.js:305:17)\n' +
+    '    at async DevServer.handleRequestImpl (/Users/tazusa/Desktop/HyaQShix/PlanBee/planbee/node_modules/next/dist/server/base-server.js:900:17)\n' +
+    '    at async /Users/tazusa/Desktop/HyaQShix/PlanBee/planbee/node_modules/next/dist/server/dev/next-dev-server.js:371:20\n' +
+    '    at async Span.traceAsyncFn (/Users/tazusa/Desktop/HyaQShix/PlanBee/planbee/node_modules/next/dist/trace/trace.js:157:20)\n' +
+    '    at async DevServer.handleRequest (/Users/tazusa/Desktop/HyaQShix/PlanBee/planbee/node_modules/next/dist/server/dev/next-dev-server.js:368:24)\n' +
+    '    at async invokeRender (/Users/tazusa/Desktop/HyaQShix/PlanBee/planbee/node_modules/next/dist/server/lib/router-server.js:237:21)\n' +
+    '    at async handleRequest (/Users/tazusa/Desktop/HyaQShix/PlanBee/planbee/node_modules/next/dist/server/lib/router-server.js:428:24)\n' +
+    '    at async requestHandlerImpl (/Users/tazusa/Desktop/HyaQShix/PlanBee/planbee/node_modules/next/dist/server/lib/router-server.js:452:13)\n' +
+    '    at async Server.requestListener (/Users/tazusa/Desktop/HyaQShix/PlanBee/planbee/node_modules/next/dist/server/lib/start-server.js:158:13)',
+  hint: '',
+  code: ''
+}
+AI message save error: {
+  message: 'TypeError: fetch failed',
+  details: 'TypeError: fetch failed\n' +
+    '    at node:internal/deps/undici/undici:15482:13\n' +
+    '    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)\n' +
+    '    at async POST (/Users/tazusa/Desktop/HyaQShix/PlanBee/planbee/.next/server/chunks/[root-of-the-server]__9b49ce5c._.js:308:43)\n' +
+    '    at async AppRouteRouteModule.do (/Users/tazusa/Desktop/HyaQShix/PlanBee/planbee/node_modules/next/dist/compiled/next-server/app-route-turbo.runtime.dev.js:26:34112)\n' +
+    '    at async AppRouteRouteModule.handle (/Users/tazusa/Desktop/HyaQShix/PlanBee/planbee/node_modules/next/dist/compiled/next-server/app-route-turbo.runtime.dev.js:26:41338)\n' +
+    '    at async doRender (/Users/tazusa/Desktop/HyaQShix/PlanBee/planbee/node_modules/next/dist/server/base-server.js:1518:42)\n' +
+    '    at async DevServer.renderToResponseWithComponentsImpl (/Users/tazusa/Desktop/HyaQShix/PlanBee/planbee/node_modules/next/dist/server/base-server.js:1920:28)\n' +
+    '    at async DevServer.renderPageComponent (/Users/tazusa/Desktop/HyaQShix/PlanBee/planbee/node_modules/next/dist/server/base-server.js:2408:24)\n' +
+    '    at async DevServer.renderToResponseImpl (/Users/tazusa/Desktop/HyaQShix/PlanBee/planbee/node_modules/next/dist/server/base-server.js:2445:32)\n' +
+    '    at async DevServer.pipeImpl (/Users/tazusa/Desktop/HyaQShix/PlanBee/planbee/node_modules/next/dist/server/base-server.js:1008:25)\n' +
+    '    at async NextNodeServer.handleCatchallRenderRequest (/Users/tazusa/Desktop/HyaQShix/PlanBee/planbee/node_modules/next/dist/server/next-server.js:305:17)\n' +
+    '    at async DevServer.handleRequestImpl (/Users/tazusa/Desktop/HyaQShix/PlanBee/planbee/node_modules/next/dist/server/base-server.js:900:17)\n' +
+    '    at async /Users/tazusa/Desktop/HyaQShix/PlanBee/planbee/node_modules/next/dist/server/dev/next-dev-server.js:371:20\n' +
+    '    at async Span.traceAsyncFn (/Users/tazusa/Desktop/HyaQShix/PlanBee/planbee/node_modules/next/dist/trace/trace.js:157:20)\n' +
+    '    at async DevServer.handleRequest (/Users/tazusa/Desktop/HyaQShix/PlanBee/planbee/node_modules/next/dist/server/dev/next-dev-server.js:368:24)\n' +
+    '    at async invokeRender (/Users/tazusa/Desktop/HyaQShix/PlanBee/planbee/node_modules/next/dist/server/lib/router-server.js:237:21)\n' +
+    '    at async handleRequest (/Users/tazusa/Desktop/HyaQShix/PlanBee/planbee/node_modules/next/dist/server/lib/router-server.js:428:24)\n' +
+    '    at async requestHandlerImpl (/Users/tazusa/Desktop/HyaQShix/PlanBee/planbee/node_modules/next/dist/server/lib/router-server.js:452:13)\n' +
+    '    at async Server.requestListener (/Users/tazusa/Desktop/HyaQShix/PlanBee/planbee/node_modules/next/dist/server/lib/start-server.js:158:13)',
+  hint: '',
+  code: ''
+}
+ POST /api/chat 200 in 77ms
+ GET /patient/dashboard 200 in 42ms
+ GET /patient/chat/history 404 in 31ms
+ GET /patient/chat/history 404 in 36ms
+ GET /patient/dashboard 200 in 45ms
+ GET /patient/login 200 in 66ms
+ GET /patient/login 200 in 49ms
+ GET /favicon.ico 200 in 244ms
+ GET / 200 in 54ms
+ GET /staff/login 200 in 42ms
+ GET /staff/dashboard 200 in 35ms
+ GET /staff/patients 200 in 39ms
+ GET /staff/dashboard 200 in 40ms
+ GET /staff/treatment-plans 200 in 35ms
+ GET /staff/dashboard 200 in 40ms
+ GET /staff/admin 200 in 50ms
+ GET /staff/dashboard 200 in 43ms
+ GET / 200 in 42ms
+ GET /patient/login 200 in 59ms
+ GET /patient/dashboard 200 in 40ms
+ GET /patient/treatment-plan 200 in 42ms
+ GET /patient/dashboard 200 in 38ms
+ GET /patient/chat 200 in 36ms
+Chat history fetch error: {
+  message: 'TypeError: fetch failed',
+  details: 'TypeError: fetch failed\n' +
+    '    at node:internal/deps/undici/undici:15482:13\n' +
+    '    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)\n' +
+    '    at async POST (/Users/tazusa/Desktop/HyaQShix/PlanBee/planbee/.next/server/chunks/[root-of-the-server]__9b49ce5c._.js:281:60)\n' +
+    '    at async AppRouteRouteModule.do (/Users/tazusa/Desktop/HyaQShix/PlanBee/planbee/node_modules/next/dist/compiled/next-server/app-route-turbo.runtime.dev.js:26:34112)\n' +
+    '    at async AppRouteRouteModule.handle (/Users/tazusa/Desktop/HyaQShix/PlanBee/planbee/node_modules/next/dist/compiled/next-server/app-route-turbo.runtime.dev.js:26:41338)\n' +
+    '    at async doRender (/Users/tazusa/Desktop/HyaQShix/PlanBee/planbee/node_modules/next/dist/server/base-server.js:1518:42)\n' +
+    '    at async DevServer.renderToResponseWithComponentsImpl (/Users/tazusa/Desktop/HyaQShix/PlanBee/planbee/node_modules/next/dist/server/base-server.js:1920:28)\n' +
+    '    at async DevServer.renderPageComponent (/Users/tazusa/Desktop/HyaQShix/PlanBee/planbee/node_modules/next/dist/server/base-server.js:2408:24)\n' +
+    '    at async DevServer.renderToResponseImpl (/Users/tazusa/Desktop/HyaQShix/PlanBee/planbee/node_modules/next/dist/server/base-server.js:2445:32)\n' +
+    '    at async DevServer.pipeImpl (/Users/tazusa/Desktop/HyaQShix/PlanBee/planbee/node_modules/next/dist/server/base-server.js:1008:25)\n' +
+    '    at async NextNodeServer.handleCatchallRenderRequest (/Users/tazusa/Desktop/HyaQShix/PlanBee/planbee/node_modules/next/dist/server/next-server.js:305:17)\n' +
+    '    at async DevServer.handleRequestImpl (/Users/tazusa/Desktop/HyaQShix/PlanBee/planbee/node_modules/next/dist/server/base-server.js:900:17)\n' +
+    '    at async /Users/tazusa/Desktop/HyaQShix/PlanBee/planbee/node_modules/next/dist/server/dev/next-dev-server.js:371:20\n' +
+    '    at async Span.traceAsyncFn (/Users/tazusa/Desktop/HyaQShix/PlanBee/planbee/node_modules/next/dist/trace/trace.js:157:20)\n' +
+    '    at async DevServer.handleRequest (/Users/tazusa/Desktop/HyaQShix/PlanBee/planbee/node_modules/next/dist/server/dev/next-dev-server.js:368:24)\n' +
+    '    at async invokeRender (/Users/tazusa/Desktop/HyaQShix/PlanBee/planbee/node_modules/next/dist/server/lib/router-server.js:237:21)\n' +
+    '    at async handleRequest (/Users/tazusa/Desktop/HyaQShix/PlanBee/planbee/node_modules/next/dist/server/lib/router-server.js:428:24)\n' +
+    '    at async requestHandlerImpl (/Users/tazusa/Desktop/HyaQShix/PlanBee/planbee/node_modules/next/dist/server/lib/router-server.js:452:13)\n' +
+    '    at async Server.requestListener (/Users/tazusa/Desktop/HyaQShix/PlanBee/planbee/node_modules/next/dist/server/lib/start-server.js:158:13)',
+  hint: '',
+  code: ''
+}
+User message save error: {
+  message: 'TypeError: fetch failed',
+  details: 'TypeError: fetch failed\n' +
+    '    at node:internal/deps/undici/undici:15482:13\n' +
+    '    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)\n' +
+    '    at async POST (/Users/tazusa/Desktop/HyaQShix/PlanBee/planbee/.next/server/chunks/[root-of-the-server]__9b49ce5c._.js:298:45)\n' +
+    '    at async AppRouteRouteModule.do (/Users/tazusa/Desktop/HyaQShix/PlanBee/planbee/node_modules/next/dist/compiled/next-server/app-route-turbo.runtime.dev.js:26:34112)\n' +
+    '    at async AppRouteRouteModule.handle (/Users/tazusa/Desktop/HyaQShix/PlanBee/planbee/node_modules/next/dist/compiled/next-server/app-route-turbo.runtime.dev.js:26:41338)\n' +
+    '    at async doRender (/Users/tazusa/Desktop/HyaQShix/PlanBee/planbee/node_modules/next/dist/server/base-server.js:1518:42)\n' +
+    '    at async DevServer.renderToResponseWithComponentsImpl (/Users/tazusa/Desktop/HyaQShix/PlanBee/planbee/node_modules/next/dist/server/base-server.js:1920:28)\n' +
+    '    at async DevServer.renderPageComponent (/Users/tazusa/Desktop/HyaQShix/PlanBee/planbee/node_modules/next/dist/server/base-server.js:2408:24)\n' +
+    '    at async DevServer.renderToResponseImpl (/Users/tazusa/Desktop/HyaQShix/PlanBee/planbee/node_modules/next/dist/server/base-server.js:2445:32)\n' +
+    '    at async DevServer.pipeImpl (/Users/tazusa/Desktop/HyaQShix/PlanBee/planbee/node_modules/next/dist/server/base-server.js:1008:25)\n' +
+    '    at async NextNodeServer.handleCatchallRenderRequest (/Users/tazusa/Desktop/HyaQShix/PlanBee/planbee/node_modules/next/dist/server/next-server.js:305:17)\n' +
+    '    at async DevServer.handleRequestImpl (/Users/tazusa/Desktop/HyaQShix/PlanBee/planbee/node_modules/next/dist/server/base-server.js:900:17)\n' +
+    '    at async /Users/tazusa/Desktop/HyaQShix/PlanBee/planbee/node_modules/next/dist/server/dev/next-dev-server.js:371:20\n' +
+    '    at async Span.traceAsyncFn (/Users/tazusa/Desktop/HyaQShix/PlanBee/planbee/node_modules/next/dist/trace/trace.js:157:20)\n' +
+    '    at async DevServer.handleRequest (/Users/tazusa/Desktop/HyaQShix/PlanBee/planbee/node_modules/next/dist/server/dev/next-dev-server.js:368:24)\n' +
+    '    at async invokeRender (/Users/tazusa/Desktop/HyaQShix/PlanBee/planbee/node_modules/next/dist/server/lib/router-server.js:237:21)\n' +
+    '    at async handleRequest (/Users/tazusa/Desktop/HyaQShix/PlanBee/planbee/node_modules/next/dist/server/lib/router-server.js:428:24)\n' +
+    '    at async requestHandlerImpl (/Users/tazusa/Desktop/HyaQShix/PlanBee/planbee/node_modules/next/dist/server/lib/router-server.js:452:13)\n' +
+    '    at async Server.requestListener (/Users/tazusa/Desktop/HyaQShix/PlanBee/planbee/node_modules/next/dist/server/lib/start-server.js:158:13)',
+  hint: '',
+  code: ''
+}
+AI message save error: {
+  message: 'TypeError: fetch failed',
+  details: 'TypeError: fetch failed\n' +
+    '    at node:internal/deps/undici/undici:15482:13\n' +
+    '    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)\n' +
+    '    at async POST (/Users/tazusa/Desktop/HyaQShix/PlanBee/planbee/.next/server/chunks/[root-of-the-server]__9b49ce5c._.js:308:43)\n' +
+    '    at async AppRouteRouteModule.do (/Users/tazusa/Desktop/HyaQShix/PlanBee/planbee/node_modules/next/dist/compiled/next-server/app-route-turbo.runtime.dev.js:26:34112)\n' +
+    '    at async AppRouteRouteModule.handle (/Users/tazusa/Desktop/HyaQShix/PlanBee/planbee/node_modules/next/dist/compiled/next-server/app-route-turbo.runtime.dev.js:26:41338)\n' +
+    '    at async doRender (/Users/tazusa/Desktop/HyaQShix/PlanBee/planbee/node_modules/next/dist/server/base-server.js:1518:42)\n' +
+    '    at async DevServer.renderToResponseWithComponentsImpl (/Users/tazusa/Desktop/HyaQShix/PlanBee/planbee/node_modules/next/dist/server/base-server.js:1920:28)\n' +
+    '    at async DevServer.renderPageComponent (/Users/tazusa/Desktop/HyaQShix/PlanBee/planbee/node_modules/next/dist/server/base-server.js:2408:24)\n' +
+    '    at async DevServer.renderToResponseImpl (/Users/tazusa/Desktop/HyaQShix/PlanBee/planbee/node_modules/next/dist/server/base-server.js:2445:32)\n' +
+    '    at async DevServer.pipeImpl (/Users/tazusa/Desktop/HyaQShix/PlanBee/planbee/node_modules/next/dist/server/base-server.js:1008:25)\n' +
+    '    at async NextNodeServer.handleCatchallRenderRequest (/Users/tazusa/Desktop/HyaQShix/PlanBee/planbee/node_modules/next/dist/server/next-server.js:305:17)\n' +
+    '    at async DevServer.handleRequestImpl (/Users/tazusa/Desktop/HyaQShix/PlanBee/planbee/node_modules/next/dist/server/base-server.js:900:17)\n' +
+    '    at async /Users/tazusa/Desktop/HyaQShix/PlanBee/planbee/node_modules/next/dist/server/dev/next-dev-server.js:371:20\n' +
+    '    at async Span.traceAsyncFn (/Users/tazusa/Desktop/HyaQShix/PlanBee/planbee/node_modules/next/dist/trace/trace.js:157:20)\n' +
+    '    at async DevServer.handleRequest (/Users/tazusa/Desktop/HyaQShix/PlanBee/planbee/node_modules/next/dist/server/dev/next-dev-server.js:368:24)\n' +
+    '    at async invokeRender (/Users/tazusa/Desktop/HyaQShix/PlanBee/planbee/node_modules/next/dist/server/lib/router-server.js:237:21)\n' +
+    '    at async handleRequest (/Users/tazusa/Desktop/HyaQShix/PlanBee/planbee/node_modules/next/dist/server/lib/router-server.js:428:24)\n' +
+    '    at async requestHandlerImpl (/Users/tazusa/Desktop/HyaQShix/PlanBee/planbee/node_modules/next/dist/server/lib/router-server.js:452:13)\n' +
+    '    at async Server.requestListener (/Users/tazusa/Desktop/HyaQShix/PlanBee/planbee/node_modules/next/dist/server/lib/start-server.js:158:13)',
+  hint: '',
+  code: ''
+}
+ POST /api/chat 200 in 82ms
+ GET /patient/dashboard 200 in 38ms
+ GET / 200 in 35ms
+ GET /staff/login 200 in 44ms
+ GET /staff/dashboard 200 in 39ms
+ GET /staff/treatment-plans 200 in 42ms
+ GET /staff/dashboard 200 in 42ms
+ GET / 200 in 37ms
+ GET /patient/login 200 in 44ms
+ GET /patient/dashboard 200 in 36ms
+ GET /patient/treatment-plan 200 in 40ms
+ GET /patient/dashboard 200 in 34ms
+ GET /.well-known/appspecific/com.chrome.devtools.json 404 in 40ms
+ GET /patient/treatment-plan 200 in 41ms
+ GET /patient/dashboard 200 in 36ms
+ GET / 200 in 52ms
+ GET /patient/login 200 in 44ms
+ GET /patient/login 200 in 72ms
+ GET /favicon.ico 200 in 243ms
+ GET /patient/dashboard 200 in 33ms
+ GET /patient/treatment-plan 200 in 48ms
+ GET /patient/dashboard 200 in 39ms
+ GET /patient/chat 200 in 47ms
+Chat history fetch error: {
+  message: 'TypeError: fetch failed',
+  details: 'TypeError: fetch failed\n' +
+    '    at node:internal/deps/undici/undici:15482:13\n' +
+    '    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)\n' +
+    '    at async POST (/Users/tazusa/Desktop/HyaQShix/PlanBee/planbee/.next/server/chunks/[root-of-the-server]__9b49ce5c._.js:281:60)\n' +
+    '    at async AppRouteRouteModule.do (/Users/tazusa/Desktop/HyaQShix/PlanBee/planbee/node_modules/next/dist/compiled/next-server/app-route-turbo.runtime.dev.js:26:34112)\n' +
+    '    at async AppRouteRouteModule.handle (/Users/tazusa/Desktop/HyaQShix/PlanBee/planbee/node_modules/next/dist/compiled/next-server/app-route-turbo.runtime.dev.js:26:41338)\n' +
+    '    at async doRender (/Users/tazusa/Desktop/HyaQShix/PlanBee/planbee/node_modules/next/dist/server/base-server.js:1518:42)\n' +
+    '    at async DevServer.renderToResponseWithComponentsImpl (/Users/tazusa/Desktop/HyaQShix/PlanBee/planbee/node_modules/next/dist/server/base-server.js:1920:28)\n' +
+    '    at async DevServer.renderPageComponent (/Users/tazusa/Desktop/HyaQShix/PlanBee/planbee/node_modules/next/dist/server/base-server.js:2408:24)\n' +
+    '    at async DevServer.renderToResponseImpl (/Users/tazusa/Desktop/HyaQShix/PlanBee/planbee/node_modules/next/dist/server/base-server.js:2445:32)\n' +
+    '    at async DevServer.pipeImpl (/Users/tazusa/Desktop/HyaQShix/PlanBee/planbee/node_modules/next/dist/server/base-server.js:1008:25)\n' +
+    '    at async NextNodeServer.handleCatchallRenderRequest (/Users/tazusa/Desktop/HyaQShix/PlanBee/planbee/node_modules/next/dist/server/next-server.js:305:17)\n' +
+    '    at async DevServer.handleRequestImpl (/Users/tazusa/Desktop/HyaQShix/PlanBee/planbee/node_modules/next/dist/server/base-server.js:900:17)\n' +
+    '    at async /Users/tazusa/Desktop/HyaQShix/PlanBee/planbee/node_modules/next/dist/server/dev/next-dev-server.js:371:20\n' +
+    '    at async Span.traceAsyncFn (/Users/tazusa/Desktop/HyaQShix/PlanBee/planbee/node_modules/next/dist/trace/trace.js:157:20)\n' +
+    '    at async DevServer.handleRequest (/Users/tazusa/Desktop/HyaQShix/PlanBee/planbee/node_modules/next/dist/server/dev/next-dev-server.js:368:24)\n' +
+    '    at async invokeRender (/Users/tazusa/Desktop/HyaQShix/PlanBee/planbee/node_modules/next/dist/server/lib/router-server.js:237:21)\n' +
+    '    at async handleRequest (/Users/tazusa/Desktop/HyaQShix/PlanBee/planbee/node_modules/next/dist/server/lib/router-server.js:428:24)\n' +
+    '    at async requestHandlerImpl (/Users/tazusa/Desktop/HyaQShix/PlanBee/planbee/node_modules/next/dist/server/lib/router-server.js:452:13)\n' +
+    '    at async Server.requestListener (/Users/tazusa/Desktop/HyaQShix/PlanBee/planbee/node_modules/next/dist/server/lib/start-server.js:158:13)',
+  hint: '',
+  code: ''
+}
+User message save error: {
+  message: 'TypeError: fetch failed',
+  details: 'TypeError: fetch failed\n' +
+    '    at node:internal/deps/undici/undici:15482:13\n' +
+    '    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)\n' +
+    '    at async POST (/Users/tazusa/Desktop/HyaQShix/PlanBee/planbee/.next/server/chunks/[root-of-the-server]__9b49ce5c._.js:298:45)\n' +
+    '    at async AppRouteRouteModule.do (/Users/tazusa/Desktop/HyaQShix/PlanBee/planbee/node_modules/next/dist/compiled/next-server/app-route-turbo.runtime.dev.js:26:34112)\n' +
+    '    at async AppRouteRouteModule.handle (/Users/tazusa/Desktop/HyaQShix/PlanBee/planbee/node_modules/next/dist/compiled/next-server/app-route-turbo.runtime.dev.js:26:41338)\n' +
+    '    at async doRender (/Users/tazusa/Desktop/HyaQShix/PlanBee/planbee/node_modules/next/dist/server/base-server.js:1518:42)\n' +
+    '    at async DevServer.renderToResponseWithComponentsImpl (/Users/tazusa/Desktop/HyaQShix/PlanBee/planbee/node_modules/next/dist/server/base-server.js:1920:28)\n' +
+    '    at async DevServer.renderPageComponent (/Users/tazusa/Desktop/HyaQShix/PlanBee/planbee/node_modules/next/dist/server/base-server.js:2408:24)\n' +
+    '    at async DevServer.renderToResponseImpl (/Users/tazusa/Desktop/HyaQShix/PlanBee/planbee/node_modules/next/dist/server/base-server.js:2445:32)\n' +
+    '    at async DevServer.pipeImpl (/Users/tazusa/Desktop/HyaQShix/PlanBee/planbee/node_modules/next/dist/server/base-server.js:1008:25)\n' +
+    '    at async NextNodeServer.handleCatchallRenderRequest (/Users/tazusa/Desktop/HyaQShix/PlanBee/planbee/node_modules/next/dist/server/next-server.js:305:17)\n' +
+    '    at async DevServer.handleRequestImpl (/Users/tazusa/Desktop/HyaQShix/PlanBee/planbee/node_modules/next/dist/server/base-server.js:900:17)\n' +
+    '    at async /Users/tazusa/Desktop/HyaQShix/PlanBee/planbee/node_modules/next/dist/server/dev/next-dev-server.js:371:20\n' +
+    '    at async Span.traceAsyncFn (/Users/tazusa/Desktop/HyaQShix/PlanBee/planbee/node_modules/next/dist/trace/trace.js:157:20)\n' +
+    '    at async DevServer.handleRequest (/Users/tazusa/Desktop/HyaQShix/PlanBee/planbee/node_modules/next/dist/server/dev/next-dev-server.js:368:24)\n' +
+    '    at async invokeRender (/Users/tazusa/Desktop/HyaQShix/PlanBee/planbee/node_modules/next/dist/server/lib/router-server.js:237:21)\n' +
+    '    at async handleRequest (/Users/tazusa/Desktop/HyaQShix/PlanBee/planbee/node_modules/next/dist/server/lib/router-server.js:428:24)\n' +
+    '    at async requestHandlerImpl (/Users/tazusa/Desktop/HyaQShix/PlanBee/planbee/node_modules/next/dist/server/lib/router-server.js:452:13)\n' +
+    '    at async Server.requestListener (/Users/tazusa/Desktop/HyaQShix/PlanBee/planbee/node_modules/next/dist/server/lib/start-server.js:158:13)',
+  hint: '',
+  code: ''
+}
+AI message save error: {
+  message: 'TypeError: fetch failed',
+  details: 'TypeError: fetch failed\n' +
+    '    at node:internal/deps/undici/undici:15482:13\n' +
+    '    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)\n' +
+    '    at async POST (/Users/tazusa/Desktop/HyaQShix/PlanBee/planbee/.next/server/chunks/[root-of-the-server]__9b49ce5c._.js:308:43)\n' +
+    '    at async AppRouteRouteModule.do (/Users/tazusa/Desktop/HyaQShix/PlanBee/planbee/node_modules/next/dist/compiled/next-server/app-route-turbo.runtime.dev.js:26:34112)\n' +
+    '    at async AppRouteRouteModule.handle (/Users/tazusa/Desktop/HyaQShix/PlanBee/planbee/node_modules/next/dist/compiled/next-server/app-route-turbo.runtime.dev.js:26:41338)\n' +
+    '    at async doRender (/Users/tazusa/Desktop/HyaQShix/PlanBee/planbee/node_modules/next/dist/server/base-server.js:1518:42)\n' +
+    '    at async DevServer.renderToResponseWithComponentsImpl (/Users/tazusa/Desktop/HyaQShix/PlanBee/planbee/node_modules/next/dist/server/base-server.js:1920:28)\n' +
+    '    at async DevServer.renderPageComponent (/Users/tazusa/Desktop/HyaQShix/PlanBee/planbee/node_modules/next/dist/server/base-server.js:2408:24)\n' +
+    '    at async DevServer.renderToResponseImpl (/Users/tazusa/Desktop/HyaQShix/PlanBee/planbee/node_modules/next/dist/server/base-server.js:2445:32)\n' +
+    '    at async DevServer.pipeImpl (/Users/tazusa/Desktop/HyaQShix/PlanBee/planbee/node_modules/next/dist/server/base-server.js:1008:25)\n' +
+    '    at async NextNodeServer.handleCatchallRenderRequest (/Users/tazusa/Desktop/HyaQShix/PlanBee/planbee/node_modules/next/dist/server/next-server.js:305:17)\n' +
+    '    at async DevServer.handleRequestImpl (/Users/tazusa/Desktop/HyaQShix/PlanBee/planbee/node_modules/next/dist/server/base-server.js:900:17)\n' +
+    '    at async /Users/tazusa/Desktop/HyaQShix/PlanBee/planbee/node_modules/next/dist/server/dev/next-dev-server.js:371:20\n' +
+    '    at async Span.traceAsyncFn (/Users/tazusa/Desktop/HyaQShix/PlanBee/planbee/node_modules/next/dist/trace/trace.js:157:20)\n' +
+    '    at async DevServer.handleRequest (/Users/tazusa/Desktop/HyaQShix/PlanBee/planbee/node_modules/next/dist/server/dev/next-dev-server.js:368:24)\n' +
+    '    at async invokeRender (/Users/tazusa/Desktop/HyaQShix/PlanBee/planbee/node_modules/next/dist/server/lib/router-server.js:237:21)\n' +
+    '    at async handleRequest (/Users/tazusa/Desktop/HyaQShix/PlanBee/planbee/node_modules/next/dist/server/lib/router-server.js:428:24)\n' +
+    '    at async requestHandlerImpl (/Users/tazusa/Desktop/HyaQShix/PlanBee/planbee/node_modules/next/dist/server/lib/router-server.js:452:13)\n' +
+    '    at async Server.requestListener (/Users/tazusa/Desktop/HyaQShix/PlanBee/planbee/node_modules/next/dist/server/lib/start-server.js:158:13)',
+  hint: '',
+  code: ''
+}
+ POST /api/chat 200 in 77ms
+ GET /patient/dashboard 200 in 39ms
+ GET /patient/chat/history 404 in 34ms
+ GET /patient/chat/history 404 in 38ms
+ GET /patient/dashboard 200 in 54ms
+ GET /patient/login 200 in 66ms
+ GET /patient/dashboard 200 in 36ms
+ GET /.well-known/appspecific/com.chrome.devtools.json 404 in 38ms
+ GET /patient/chat 200 in 42ms
+ GET /patient/dashboard 200 in 34ms
+ GET / 200 in 39ms
+ GET /staff/login 200 in 39ms
+ GET /staff/dashboard 200 in 36ms
+ GET /staff/patients 200 in 42ms
+ GET /staff/dashboard 200 in 42ms
+ GET /staff/patients 200 in 40ms
+ GET /staff/dashboard 200 in 39ms
+ GET /staff/treatment-plans 200 in 43ms
+ GET /staff/dashboard 200 in 41ms
+ GET /staff/admin 200 in 37ms
+ GET /staff/dashboard 200 in 50ms
+ GET /staff/treatment-plans 200 in 42ms
+ GET /staff/dashboard 200 in 55ms
+ GET /staff/chat-summaries 200 in 43ms
+ GET /staff/dashboard 200 in 38ms
+ ✓ Compiled in 59ms
+ ✓ Compiled in 34ms
+ ✓ Compiled in 68ms
+ ✓ Compiled in 33ms
+ ✓ Compiled in 48ms
+ ✓ Compiled in 42ms
+ ✓ Compiled in 37ms
+ ✓ Compiled in 47ms
+ ✓ Compiled in 32ms
+ ✓ Compiled in 28ms
+ ✓ Compiled in 27ms
+ ⚠ Found a change in next.config.ts. Restarting the server to apply the changes...
+   ▲ Next.js 15.3.4 (Turbopack)
+   - Local:        http://localhost:3000
+   - Network:      http://192.168.0.23:3000
+
+ ✓ Starting...
+ ⚠ Invalid next.config.ts options detected: 
+ ⚠     Unrecognized key(s) in object: 'turbo'
+ ⚠ See more info here: https://nextjs.org/docs/messages/invalid-next-config
+ ✓ Ready in 676ms
+ ⚠ Found a change in next.config.ts. Restarting the server to apply the changes...
+   ▲ Next.js 15.3.4 (Turbopack)
+   - Local:        http://localhost:3000
+   - Network:      http://192.168.0.23:3000
+
+ ✓ Starting...
+ ⚠ Invalid next.config.ts options detected: 
+ ⚠     Unrecognized key(s) in object: 'turbo'
+ ⚠ See more info here: https://nextjs.org/docs/messages/invalid-next-config
+ ✓ Ready in 777ms
+ ⚠ Found a change in next.config.ts. Restarting the server to apply the changes...
+   ▲ Next.js 15.3.4 (Turbopack)
+   - Local:        http://localhost:3000
+   - Network:      http://192.168.0.23:3000
+   - Experiments (use with caution):
+     · turbo
+
+ ✓ Starting...
+ ⚠ The config property `experimental.turbo` is deprecated. Move this setting to `config.turbopack` as Turbopack is now stable.
+ ✓ Ready in 683ms

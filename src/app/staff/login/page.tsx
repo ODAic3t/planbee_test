@@ -49,7 +49,7 @@ export default function StaffLoginPage() {
       } else {
         setError(result.error || 'ログインに失敗しました');
       }
-    } catch (error) {
+    } catch {
       setError('ログインに失敗しました');
     } finally {
       setIsSubmitting(false);
@@ -68,7 +68,7 @@ export default function StaffLoginPage() {
         setError(result.error || 'Google認証に失敗しました');
       }
       // 成功時はコールバックページで処理される
-    } catch (error) {
+    } catch {
       setError('Google認証に失敗しました');
     } finally {
       setIsGoogleLoading(false);

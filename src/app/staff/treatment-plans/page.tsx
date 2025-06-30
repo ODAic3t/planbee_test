@@ -41,7 +41,7 @@ export default function StaffTreatmentPlansPage() {
       patient_id: selectedPatient.id,
       created_by: staff.id,
       title: `${selectedPatient.name}さんの診療計画`,
-      items: [],
+      treatment_items: [],
       status: 'draft',
       created_at: new Date().toISOString(),
       updated_at: new Date().toISOString()
@@ -56,24 +56,23 @@ export default function StaffTreatmentPlansPage() {
 
     const newItem: TreatmentPlanItem = {
       id: Date.now().toString(),
-      title: '',
-      description: '',
+      treatment_item_id: 'temp-item',
       completed: false,
-      order: treatmentPlan.items.length
+      order: treatmentPlan.treatment_items.length
     };
 
     setTreatmentPlan({
       ...treatmentPlan,
-      items: [...treatmentPlan.items, newItem]
+      treatment_items: [...treatmentPlan.treatment_items, newItem]
     });
   };
 
-  const updateTreatmentItem = (itemId: string, field: keyof TreatmentPlanItem, value: any) => {
+  const updateTreatmentItem = (itemId: string, field: keyof TreatmentPlanItem, value: string | boolean | number) => {
     if (!treatmentPlan) return;
 
     setTreatmentPlan({
       ...treatmentPlan,
-      items: treatmentPlan.items.map(item =>
+      treatment_items: treatmentPlan.treatment_items.map(item =>
         item.id === itemId ? { ...item, [field]: value } : item
       )
     });
@@ -84,7 +83,7 @@ export default function StaffTreatmentPlansPage() {
 
     setTreatmentPlan({
       ...treatmentPlan,
-      items: treatmentPlan.items.filter(item => item.id !== itemId)
+      treatment_items: treatmentPlan.treatment_items.filter(item => item.id !== itemId)
     });
   };
 
@@ -217,7 +216,7 @@ export default function StaffTreatmentPlansPage() {
                   </div>
 
                   <div className="space-y-3">
-                    {treatmentPlan.items.map((item, index) => (
+                    {treatmentPlan.treatment_items.map((item, index) => (
                       <div key={item.id} className="border rounded-lg p-3">
                         <div className="flex items-start gap-3">
                           <span className="text-sm font-medium text-gray-500 mt-1">
@@ -228,22 +227,22 @@ export default function StaffTreatmentPlansPage() {
                               <div className="space-y-2">
                                 <Input
                                   type="text"
-                                  placeholder="治療項目名"
-                                  value={item.title}
-                                  onChange={(e) => updateTreatmentItem(item.id, 'title', e.target.value)}
+                                  placeholder="治療項目ID"
+                                  value={item.treatment_item_id}
+                                  onChange={(e) => updateTreatmentItem(item.id, 'treatment_item_id', e.target.value)}
                                 />
                                 <textarea
                                   className="w-full p-2 border border-gray-300 rounded-md text-sm"
-                                  placeholder="詳細説明"
+                                  placeholder="備考"
                                   rows={2}
-                                  value={item.description}
-                                  onChange={(e) => updateTreatmentItem(item.id, 'description', e.target.value)}
+                                  value={item.notes || ''}
+                                  onChange={(e) => updateTreatmentItem(item.id, 'notes', e.target.value)}
                                 />
                               </div>
                             ) : (
                               <div>
-                                <p className="font-medium">{item.title || '（未設定）'}</p>
-                                <p className="text-sm text-gray-600">{item.description}</p>
+                                <p className="font-medium">{item.treatment_item_id || '（未設定）'}</p>
+                                <p className="text-sm text-gray-600">{item.notes}</p>
                               </div>
                             )}
                           </div>

@@ -14,7 +14,7 @@ import { formatDateTime } from '@/lib/utils';
 export default function PatientChatPage() {
   const router = useRouter();
   const { user, patient } = useAuthStore();
-  const { messages, addMessage, setLoading, isLoading, error } = useChatStore();
+  const { messages, addMessage, setLoading, isLoading } = useChatStore();
   const [inputMessage, setInputMessage] = useState('');
   const messagesEndRef = useRef<HTMLDivElement>(null);
 

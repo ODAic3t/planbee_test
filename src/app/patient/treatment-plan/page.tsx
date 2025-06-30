@@ -6,7 +6,7 @@ import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/Card';
 import Button from '@/components/ui/Button';
 import Layout from '@/components/Layout';
 import { useAuthStore } from '@/store/authStore';
-import { TreatmentPlan, TreatmentItem, TreatmentPlanItem } from '@/types';
+import { TreatmentPlan, TreatmentPlanItem } from '@/types';
 import { formatDate, formatDateTime } from '@/lib/utils';
 import { mockTreatmentPlans, mockTreatmentItems } from '@/lib/mock-data';
 
@@ -285,78 +285,78 @@ export default function PatientTreatmentPlanPage() {
             </CardHeader>
             <CardContent>
               <div className="space-y-4">
-                                 {completedItemsSorted.map((item, index) => (
-                   <div 
-                     key={item.id}
-                     className="border rounded-lg p-4 bg-green-50 border-green-200"
-                   >
-                     <div className="flex items-start justify-between">
-                       <div className="flex-1">
-                         <div className="flex items-center mb-2">
-                           <div className="w-6 h-6 rounded-full flex items-center justify-center text-xs font-semibold mr-3 bg-green-600 text-white">
-                             ✓
-                           </div>
-                           <h4 className="font-semibold text-gray-900">
-                             {item.treatment_item?.patient_name || '治療項目'}
-                           </h4>
-                         </div>
-                         
-                         {item.treatment_item?.description && (
-                           <p className="text-gray-600 text-sm mb-2 ml-9">
-                             {item.treatment_item.description}
-                           </p>
-                         )}
-                         
-                         <div className="ml-9 space-y-1 text-sm">
-                           {item.tooth_number && (
-                             <div className="flex items-center text-gray-600">
-                               <span className="font-medium mr-2">対象歯:</span>
-                               <span>{item.tooth_number}番</span>
-                             </div>
-                           )}
-                           
-                           {item.estimated_sessions && (
-                             <div className="flex items-center text-gray-600">
-                               <span className="font-medium mr-2">実施回数:</span>
-                               <span>{item.estimated_sessions}回</span>
-                             </div>
-                           )}
-                           
-                           {(item.completed_date || item.scheduled_date) && (
-                             <div className="flex items-center text-green-700 font-medium">
-                               <svg className="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-                               </svg>
-                               <span>
-                                 実施日: {formatDateTime(item.completed_date || item.scheduled_date!)}
-                               </span>
-                             </div>
-                           )}
-                           
-                           {item.notes && (
-                             <div className="text-gray-600">
-                               <span className="font-medium">備考:</span>
-                               <span className="ml-2">{item.notes}</span>
-                             </div>
-                           )}
-                         </div>
-                       </div>
-                       
-                       <div className="ml-4">
-                         <div className="flex items-center text-green-600">
-                           <svg className="w-5 h-5 mr-1" fill="currentColor" viewBox="0 0 20 20">
-                             <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
-                           </svg>
-                           <span className="text-sm font-medium">完了</span>
-                         </div>
-                       </div>
-                     </div>
-                   </div>
-                 ))}
-               </div>
-             </CardContent>
-           </Card>
-         )}
+                {completedItemsSorted.map((item) => (
+                  <div 
+                    key={item.id}
+                    className="border rounded-lg p-4 bg-green-50 border-green-200"
+                  >
+                    <div className="flex items-start justify-between">
+                      <div className="flex-1">
+                        <div className="flex items-center mb-2">
+                          <div className="w-6 h-6 rounded-full flex items-center justify-center text-xs font-semibold mr-3 bg-green-600 text-white">
+                            ✓
+                          </div>
+                          <h4 className="font-semibold text-gray-900">
+                            {item.treatment_item?.patient_name || '治療項目'}
+                          </h4>
+                        </div>
+                        
+                        {item.treatment_item?.description && (
+                          <p className="text-gray-600 text-sm mb-2 ml-9">
+                            {item.treatment_item.description}
+                          </p>
+                        )}
+                        
+                        <div className="ml-9 space-y-1 text-sm">
+                          {item.tooth_number && (
+                            <div className="flex items-center text-gray-600">
+                              <span className="font-medium mr-2">対象歯:</span>
+                              <span>{item.tooth_number}番</span>
+                            </div>
+                          )}
+                          
+                          {item.estimated_sessions && (
+                            <div className="flex items-center text-gray-600">
+                              <span className="font-medium mr-2">実施回数:</span>
+                              <span>{item.estimated_sessions}回</span>
+                            </div>
+                          )}
+                          
+                          {(item.completed_date || item.scheduled_date) && (
+                            <div className="flex items-center text-green-700 font-medium">
+                              <svg className="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                              </svg>
+                              <span>
+                                実施日: {formatDateTime(item.completed_date || item.scheduled_date!)}
+                              </span>
+                            </div>
+                          )}
+                          
+                          {item.notes && (
+                            <div className="text-gray-600">
+                              <span className="font-medium">備考:</span>
+                              <span className="ml-2">{item.notes}</span>
+                            </div>
+                          )}
+                        </div>
+                      </div>
+                      
+                      <div className="ml-4">
+                        <div className="flex items-center text-green-600">
+                          <svg className="w-5 h-5 mr-1" fill="currentColor" viewBox="0 0 20 20">
+                            <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                          </svg>
+                          <span className="text-sm font-medium">完了</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </CardContent>
+          </Card>
+        )}
 
         {/* 予定がない場合のメッセージ */}
         {upcomingItems.length === 0 && completedItemsSorted.length === 0 && (

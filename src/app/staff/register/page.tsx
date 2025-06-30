@@ -1,7 +1,6 @@
 'use client';
 
 import React, { useState } from 'react';
-import { useRouter } from 'next/navigation';
 import { useForm } from 'react-hook-form';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/Card';
 import Button from '@/components/ui/Button';
@@ -18,7 +17,6 @@ interface StaffRegisterForm extends StaffLoginForm {
 }
 
 export default function StaffRegisterPage() {
-  const router = useRouter();
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [success, setSuccess] = useState(false);
   const [error, setError] = useState<string | null>(null);
@@ -64,7 +62,7 @@ export default function StaffRegisterPage() {
       } else {
         setError(result.error || '登録に失敗しました');
       }
-    } catch (error) {
+    } catch {
       setError('登録に失敗しました');
     } finally {
       setIsSubmitting(false);

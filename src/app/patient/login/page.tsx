@@ -11,7 +11,6 @@ import { loginPatient } from '@/lib/auth';
 import { useAuthStore } from '@/store/authStore';
 import { PatientLoginForm } from '@/types';
 import { validatePatientNumber, validatePasscode } from '@/lib/utils';
-import Link from 'next/link';
 
 export default function PatientLoginPage() {
   const router = useRouter();
@@ -56,7 +55,7 @@ export default function PatientLoginPage() {
       } else {
         setError(result.error || 'ログインに失敗しました');
       }
-    } catch (error) {
+    } catch {
       setError('ログインに失敗しました');
     } finally {
       setIsSubmitting(false);

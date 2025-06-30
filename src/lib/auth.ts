@@ -1,7 +1,6 @@
-import { supabase, supabaseAdmin } from './supabase';
+import { supabase } from './supabase';
 import { Patient, Staff, AuthUser } from '@/types';
 import { mockPatientLogin, mockStaffLogin } from './mock-data';
-import crypto from 'crypto';
 
 // 開発環境かどうかを判定
 const isDevelopment = process.env.NODE_ENV === 'development' || 
@@ -86,7 +85,7 @@ export const loginStaffWithGoogle = async (): Promise<{ success: boolean; error?
       return { success: true };
     }
 
-    const { data, error } = await supabase.auth.signInWithOAuth({
+    const { error } = await supabase.auth.signInWithOAuth({
       provider: 'google',
       options: {
         redirectTo: `${window.location.origin}/staff/auth/callback`,
